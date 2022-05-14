@@ -12,8 +12,11 @@ const Services = () => {
     ]
 
     return (
-        <div className='px-12 py-24'>
-            <h3 className='uppercase texxt-center'>Our Services</h3>
+        <div className='px-12'>
+            <div className='py-24'>
+                <h3 className='uppercase text-center font-bold text-secondary'>Our Services</h3>
+                <h2 className='text-center text-3xl font-normal'>Services We Provide</h2>
+            </div>
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-5'>
                 {
                     services.map(service => <Service service={service}></Service>)
