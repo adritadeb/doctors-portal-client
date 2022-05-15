@@ -3,7 +3,7 @@ import treatment from '../../assets/images/treatment.png';
 
 const ServicesBanner = () => {
     return (
-        <div className="hero min-h-screen md:mx-24 ml-7 mt-14 w-11/12">
+        <div className="hero min-h-screen md:mx-24 ml-7 mt-14 w-11/12 px-12">
             <div className="hero-content flex-col lg:flex-row">
                 <img src={treatment} alt='' className="max-w-sm rounded-lg shadow-2xl" />
                 <div className='md:pl-20 md:pt-0 pl-7 pt-7'>
