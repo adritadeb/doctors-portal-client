@@ -7,8 +7,10 @@ const Testimonial = ({ review }) => {
             <div className="card-body">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus officiis exercitationem labore cupiditate sequi nihil quas delectus magnam aperiam vitae ea molestias nobis voluptatum Necessitatibus.</p>
                 <div className='flex items-center mt-4'>
-                    <div className='border-2 rounded-full border-primary'>
-                        <img className='w-20 p-1' src={img} alt="" />
+                    <div class="avatar">
+                        <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                            <img src={img} alt='' />
+                        </div>
                     </div>
                     <div className='ml-4'>
                         <h2 className="card-title">{name}</h2>

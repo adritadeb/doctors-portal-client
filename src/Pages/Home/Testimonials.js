@@ -28,9 +28,16 @@ const Testimonials = () => {
     ]
 
     return (
-        <div style={{ background: `url(${quote})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right top' }} className='px-12 pb-24'>
-            <h3 className='text-secondary font-bold text-xl'>Testimonial</h3>
-            <h2 className='text-3xl mb-24'>What Our Patients Says</h2>
+        <div className='px-12 pb-24'>
+            <div className='flex justify-between'>
+                <div>
+                    <h3 className='text-secondary font-bold text-xl'>Testimonial</h3>
+                    <h2 className='text-3xl mb-24'>What Our Patients Says</h2>
+                </div>
+                <div>
+                    <img className='w-24 lg:w-48' src={quote} alt="" />
+                </div>
+            </div>
             <div className='grid lg:grid-cols-3 grid-cols-1 gap-10'>
                 {
                     reviews.map(review => <Testimonial
