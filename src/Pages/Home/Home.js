@@ -6,6 +6,7 @@ import Services from './Services';
 import ServicesBanner from './ServicesBanner';
 import Testimonials from './Testimonials';
 import Contact from './Contact';
+import Footer from '../Shared/Footer';
 
 const Home = () => {
     return (
@@ -17,6 +18,7 @@ const Home = () => {
             <HomeAppointment></HomeAppointment>
             <Testimonials></Testimonials>
             <Contact></Contact>
+            <Footer></Footer>
         </div>
     );
 };

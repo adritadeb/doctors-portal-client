@@ -27,7 +27,7 @@ const Footer = () => {
             </footer>
             <footer class="footer footer-center p-4 text-base-content">
                 <div>
-                    <p>Copyright © {year} - All right reserved by Doctors Portal</p>
+                    <p>Copyright © {year} - All right reserved</p>
                 </div>
             </footer>
         </div>
