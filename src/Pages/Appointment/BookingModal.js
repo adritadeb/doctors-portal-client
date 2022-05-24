@@ -26,7 +26,7 @@ const BookingModal = ({ date, treatment, setTreatment, refetch }) => {
             phone
         };
 
-        fetch('https://lit-beach-47759.herokuapp.com/bookings', {
+        fetch('https://lit-beach-47759.herokuapp.com/booking', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
