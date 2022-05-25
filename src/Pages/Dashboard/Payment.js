@@ -2,10 +2,15 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useQuery } from 'react-query';
 import Loading from '../Shared/Loading';
+import { loadStripe } from '@stripe/stripe-js';
+import { Elements } from '@stripe/react-stripe-js';
+import CheckoutForm from './CheckoutForm';
+
+const stripePromise = loadStripe('pk_test_51L3OZaIKuLyQCWqHHPY8wiThhxiwWQvqSTL1lMYYTXrxwv8NSPfeQ9gQkAnsL88VtodVGhy4eurLxBjgndUvu2uU00g8SG0GrI');
 
 const Payment = () => {
     const { id } = useParams();
-    const url = `http://localhost:5000/booking/${id}`;
+    const url = `https://lit-beach-47759.herokuapp.com/booking/${id}`;
 
     const { data: appointment, isLoading } = useQuery(['booking', id], () => fetch(url, {
         method: 'GET',
@@ -30,7 +35,9 @@ const Payment = () => {
             </div>
             <div class="card flex-shrink-0 w-50 max-w-md shadow-2xl bg-base-100">
                 <div class="card-body">
-
+                    <Elements stripe={stripePromise}>
+                        <CheckoutForm appointment={appointment} />
+                    </Elements>
                 </div>
             </div>
         </div >
