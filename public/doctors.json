@@ -1,0 +1,16 @@
+[
+    {
+        "_id": "628d0d90d572aab700e4ce09",
+        "name": "Tom",
+        "email": "tom@gmail.com",
+        "speciality": "Teeth Orthodontics",
+        "img": "https://i.ibb.co/vz3mQwc/banner1.png"
+    },
+    {
+        "_id": "628d0f92d572aab700e4ce0a",
+        "name": "De cap",
+        "email": "de@cap.com",
+        "speciality": "Oral Surgery",
+        "img": "https://i.ibb.co/Fq7QrMG/banner3.png"
+    }
+]
